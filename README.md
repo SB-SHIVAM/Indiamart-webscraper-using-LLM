@@ -1,6 +1,6 @@
-INDIAMART WEB SCRAPER USING LLM (QWEN3:4B)
+# INDIAMART WEB SCRAPER USING LLM (QWEN3:4B)
 
-Project Overview
+## Project Overview
 
 This project is a Python-based web scraping system designed to extract company ratings, reviews, and customer satisfaction metrics from IndiaMART.
 
@@ -14,7 +14,7 @@ Ollama (Qwen3:4B) as a local Large Language Model to normalize and structure rev
 
 The final extracted data is saved in a plain text (.txt) file, making it easy to review, store, or further process.
 
-📂 Input Format (Excel)
+## 📂 Input Format (Excel)
 
 Key Capabilities
 
@@ -46,7 +46,7 @@ The input file must be an Excel file (.xlsx) with one mandatory column:
 Column Name
 Company
 
-🧠 LLM Used
+## 🧠 LLM Used
 
 Large Language Model Details
 
@@ -64,7 +64,7 @@ Handle missing or inconsistent values
 
 Ensure star ratings remain within valid bounds (1–5)
 
-🛠 Requirements
+## 🛠 Requirements
 
 All dependencies are listed in requirement_indianmart.txt
 
@@ -77,7 +77,7 @@ playwright install
 Pull LLM model
 ollama pull qwen3:4b
 
-🚀 How to Run
+## 🚀 How to Run
 
 Place your Excel file in the project folder
 
@@ -93,7 +93,7 @@ python main.py
 
 Results will be saved in:
 
-results.txt
+## results.txt
 
 📁 Project Structure
 ├── main.py              # Web scraping logic (Playwright + BS4)
@@ -105,7 +105,7 @@ results.txt
 Output
 <img width="702" height="719" alt="image" src="https://github.com/user-attachments/assets/dab6d6cb-4924-4147-b06e-caed1dc35cbc" />
 
-⚠ Important Notes
+**⚠ Important Notes
 
 Ollama must be running in the background
 
@@ -123,7 +123,7 @@ Linux ✅
 
 macOS ✅
 
-📌 Disclaimer
+**📌 Disclaimer
 
 This project is for educational and research purposes only.
 Scraping should always comply with the website’s terms of service.
