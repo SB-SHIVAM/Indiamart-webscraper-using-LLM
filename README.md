@@ -1,55 +1,67 @@
-🕵️ Indiamart Web Scraper using LLM
+INDIAMART WEB SCRAPER USING LLM (QWEN3:4B)
+Project Overview
 
-This project is a Python-based web scraper that extracts company ratings, reviews, and satisfaction metrics from IndiaMART using a real browser (Playwright) and an LLM (Qwen3:4B via Ollama) for review normalization.
+This project is a Python-based web scraping system designed to extract company ratings, reviews, and customer satisfaction metrics from IndiaMART.
 
-The final output is saved in a Notepad (.txt) file.
+It uses:
 
-✨ Features
+Playwright for JavaScript-rendered web pages
 
-Takes Excel input with a Company column
+BeautifulSoup for HTML parsing
 
-Searches companies on IndiaMART
+Ollama (Qwen3:4B) as a local Large Language Model to normalize and structure review data
+
+The final extracted data is saved in a plain text (.txt) file, making it easy to review, store, or further process.
+
+📂 Input Format (Excel)
+
+Key Capabilities
+
+Accepts Excel input containing company names
+
+Searches and matches companies on IndiaMART
 
 Extracts:
 
 Overall rating
 
-Total ratings
+Total number of ratings
 
-User satisfaction (Response, Quality, Delivery)
+Customer satisfaction metrics (Response, Quality, Delivery)
 
-Reviews (name, stars, text)
+Individual user reviews
 
-Uses LLM (qwen3:4b) to normalize review data
+Uses an LLM for structured and validated review output
 
-Handles multiple page formats
+Handles multiple IndiaMART page layouts
 
-Outputs structured results into a text file
+Outputs results in a clean, readable text format
 
-📂 Input Format (Excel)
+Input Specification
+Excel File Format
 
-Your Excel file must contain one column only:
+The input file must be an Excel file (.xlsx) with one mandatory column:
 
+Column Name
 Company
-ACC Cement
-UltraTech Cement
-Ambuja Cement
-
-✔ Column name must be exactly Company
 
 🧠 LLM Used
 
-Model: qwen3:4b
+Large Language Model Details
 
-Runtime: Ollama (local)
+Model Name: qwen3:4b
+
+Runtime: Ollama (local execution)
 
 Purpose:
 
 Normalize review data
 
-Enforce valid JSON output
+Enforce valid JSON structure
 
-Handle missing values safely
+Handle missing or inconsistent values
+
+Ensure star ratings remain within valid bounds (1–5)
 
 🛠 Requirements
 
