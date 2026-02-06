@@ -1,0 +1,4 @@
+ollama
+pandas
+beautifulsoup4
+playwright
