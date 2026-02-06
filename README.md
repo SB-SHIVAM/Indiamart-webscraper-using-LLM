@@ -1,4 +1,5 @@
 INDIAMART WEB SCRAPER USING LLM (QWEN3:4B)
+
 Project Overview
 
 This project is a Python-based web scraping system designed to extract company ratings, reviews, and customer satisfaction metrics from IndiaMART.
