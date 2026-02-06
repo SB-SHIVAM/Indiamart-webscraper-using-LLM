@@ -65,7 +65,7 @@ Ensure star ratings remain within valid bounds (1–5)
 
 🛠 Requirements
 
-All dependencies are listed in requirements.txt.
+All dependencies are listed in requirement_indianmart.txt
 
 Install dependencies
 pip install -r requirements.txt
